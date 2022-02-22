@@ -14,7 +14,6 @@ variable "instance_type_select" {
     }
   
 }
-
 variable "region_name" {
     type = string
 }
