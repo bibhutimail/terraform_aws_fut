@@ -34,21 +34,21 @@ jobs:
         # uses: sijomc/sonarscan-action@5a3a0c0eacbe76ac7c3e3513696f7449f4f914a5
         uses: sijomc/sonarscan-action@1.1
          with:
-    # SonarQube server URL
-    host: 
-    # The project's unique key. Allowed characters are: letters, numbers, -, _, . and :, with at least one non-digit.
-    projectKey: # optional, default is 
-    # Name of the project that will be displayed on the web interface.
-    projectName: # optional, default is 
-    # The project version.
-    projectVersion: # optional, default is 
-    # Set the sonar.projectBaseDir analysis property
-    projectBaseDir: # optional, default is .
-    # Exclude directories from scanning
-    exclusions: # optional
-    # Login or authentication token of a SonarQube user
-    login: 
-    # Password that goes with the sonar.login username. This should be left blank if an authentication token is being used.
-    password: # optional
-    # Sonar Scanner options for memory optimization
-    scannerOptions: # optional
+          # SonarQube server URL
+          host: 
+          # The project's unique key. Allowed characters are: letters, numbers, -, _, . and :, with at least one non-digit.
+          projectKey: # optional, default is 
+          # Name of the project that will be displayed on the web interface.
+          projectName: # optional, default is 
+          # The project version.
+          projectVersion: # optional, default is 
+          # Set the sonar.projectBaseDir analysis property
+          projectBaseDir: # optional, default is .
+          # Exclude directories from scanning
+          exclusions: # optional
+          # Login or authentication token of a SonarQube user
+          login: 
+          # Password that goes with the sonar.login username. This should be left blank if an authentication token is being used.
+          password: # optional
+          # Sonar Scanner options for memory optimization
+          scannerOptions: # optional
