@@ -18,7 +18,9 @@ variable "instance_type_select" {
 variable "region_name" {
     type = string
 }
-variable "env_name" {}
+variable "env_name" {
+type = string
+}
 
 #VPC Network varibles
 variable "cidr_range" {
