@@ -27,7 +27,7 @@ jobs:
         uses: trstringer/manual-approval@v1
         with:
           secret: ${{ github.TOKEN }}
-          approvers: bibhutimail, amar
+          approvers: bibhutimail
           minimum-approvals: 1
           timeout-minutes: 300
           issue-title: "feenixdv-dev approver"
