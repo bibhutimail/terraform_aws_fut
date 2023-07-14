@@ -12,6 +12,7 @@ jobs:
   tflint:
     name: TFLint
     runs-on: ubuntu-latest
+    environment: feenixdv-dev
 
     steps:
       - name: Checkout repository
@@ -23,16 +24,6 @@ jobs:
           unzip tflint.zip
           sudo mv tflint /usr/local/bin/
 
-      - name: Wait for approval
-        uses: trstringer/manual-approval@v1
-        with:
-          secret: ${{ github.TOKEN }}
-          approvers: bibhutimail
-          minimum-approvals: 1
-          timeout-minutes: 300
-          issue-title: "feenixdv-dev approver"
-          issue-body: "Please approve or deny the deployment of lint"
-          exclude-workflow-initiator-as-approver: false
-          
+       
       - name: Run TFLint
         run: tflint
